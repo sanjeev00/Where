@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="22sp"
+    android:paddingTop="22sp"
+    android:animateLayoutChanges="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="91dp"
+            android:src="@drawable/ch"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-91dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/check"
+            android:src="@drawable/baseline_person_add_black_18dp" />
+
+        <ImageView
+            android:id="@+id/av"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:id="@+id/pos"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/check"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
