@@ -60,6 +60,7 @@ public class Profile extends AppCompatActivity implements BottomNavigationView.O
                     la = location.getLatitude();
                     lo = location.getLongitude();
                     FirebaseDatabase.getInstance().getReference("location").child(user.getUid()).setValue(String.valueOf(la)+','+String.valueOf(lo));
+                    FirebaseDatabase.getInstance().getReference("Users").child(user.getUid()).child("Location").setValue(String.valueOf(la)+','+String.valueOf(lo));
                 }
                 else
                 {

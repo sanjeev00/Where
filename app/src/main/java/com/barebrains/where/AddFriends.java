@@ -35,6 +35,7 @@ public class AddFriends extends ListActivity {
     public List<String> ll;
     public Users user;
     public String uid;
+
     Map<String,String> ld ;
 
     @Override
@@ -74,7 +75,7 @@ public class AddFriends extends ListActivity {
                     if (!ds.getKey().equalsIgnoreCase(uid)) {
 
 
-                        user = ds.getValue(Users.class);
+                        user = new Users((String) ds.child("Name").getValue(),(String)ds.child("Email").getValue());
 
                         String k = ds.getKey();
 

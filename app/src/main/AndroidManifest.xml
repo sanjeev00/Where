@@ -17,22 +17,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.barebrains.where.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.barebrains.where.MainActivity" />
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+</activity>
         <activity android:name="com.barebrains.where.SignUp" />
         <activity android:name="com.barebrains.where.Profile" />
         <activity android:name="com.barebrains.where.AddFriends" />
         <activity android:name="com.barebrains.where.Friend_requests" />
         <activity android:name="com.barebrains.where.UploadAvatar" />
-        <activity android:name="com.barebrains.where.FriendLocation"></activity>
+        <activity android:name="com.barebrains.where.FriendLocation">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

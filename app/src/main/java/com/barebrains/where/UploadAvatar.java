@@ -115,6 +115,8 @@ public class UploadAvatar extends AppCompatActivity {
                     String downurl = String.valueOf(download);
                     mDatabase.child(FirebaseAuth.getInstance()
                             .getCurrentUser().getUid()).setValue(downurl);
+                    FirebaseDatabase.getInstance().getReference("Users").
+                    child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Avatar").setValue(downurl);
 
 
                     Toast.makeText(UploadAvatar.this,"file uploaded",Toast.LENGTH_LONG).show();

@@ -5,13 +5,13 @@
         android:id="@+id/action_home"
         android:enabled="true"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title=""
+        android:title="Home"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_profile"
         android:enabled="true"
         android:icon="@drawable/profile"
-        android:title=""
+        android:title="Profile"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_nearby"

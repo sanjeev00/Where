@@ -95,7 +95,7 @@ public class Friend_requests extends AppCompatActivity {
 
                  if(td!=null && td.containsKey(ds.getKey()))
                     {
-                        list.add(ds.getValue(Users.class));
+                        list.add(new Users((String) ds.child("Name").getValue(),(String)ds.child("Email").getValue()));
                         kl.add(ds.getKey());
                         if(ld.containsKey(ds.getKey()))
                         {

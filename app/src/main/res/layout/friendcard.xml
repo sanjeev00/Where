@@ -10,6 +10,7 @@
     <android.support.v7.widget.CardView
         android:layout_width="380dp"
         android:layout_height="117dp"
+        app:cardElevation="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

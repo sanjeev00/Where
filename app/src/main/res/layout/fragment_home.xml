@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/welcome_text"
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="40sp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="26dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:gravity="center_vertical"
+                android:text="Friends"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
     <TextView
         android:id="@+id/add_fr"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10sp"
-        android:paddingTop="20sp"
-        android:text="Find Friends +"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:foregroundGravity="center_vertical|fill_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="To Add Friends click the + button"
         android:textAlignment="center"
         android:textStyle="bold" />
-</LinearLayout>
+
+</RelativeLayout>

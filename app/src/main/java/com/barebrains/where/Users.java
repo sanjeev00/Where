@@ -5,6 +5,8 @@ public class Users {
     private String Email;
     private Friend Friends;
     private Friend FrReq;
+    private String Location;
+    private String Avatar;
 
     public Users()
     {
@@ -15,6 +17,32 @@ public class Users {
         this.Email = Email;
         this.Name = Name;
     }
+    Users(String Name,String Email,String Avatar,String avatar,String location)
+    {
+        this.Email = Email;
+        this.Name = Name;
+        this.Location = location;
+        this.Avatar = avatar;
+
+    }
+    public String getLocation() {
+        return this.Location;
+    }
+
+    public void setLocation(String location) {
+        this.Location = location;
+    }
+
+    public String getAvatar() {
+        return this.Avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.Avatar = avatar;
+    }
+
+
+
     public String getName()
     {
         return this.Name;
