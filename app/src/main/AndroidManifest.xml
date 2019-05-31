@@ -5,10 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-    <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyDgI2kOJb5YSudVQyrE-XjR33a2u-5KP7E"
-        />
+    
 
     <application
         android:allowBackup="true"
